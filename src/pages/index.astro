@@ -1,0 +1,24 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { socials } from "../config";
+import PostList from "../components/PostList.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header
+			title="The Happy Programmer"
+			description="This  blog aims to show you tricks on programming, is beigned maintained by Tony"
+			socials={socials}
+		/>
+		<PostList />
+		<Footer />
+	</body>
+</html>
