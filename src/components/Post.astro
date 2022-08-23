@@ -1,0 +1,29 @@
+---
+export interface Props {
+    title: string;
+    description: string;
+    image?: string;
+    link: string;
+    date: string;
+}
+const { title, description, date, image, link } = Astro.props;
+---
+
+<div class="py-8 flex flex-row justify-between gap-x-3 content-center">
+    <div class="max-w-lg">
+        <a
+            href={link}
+            class="text-black hover:underline dark:text-white font-medium text-xl"
+            >{title}
+        </a>
+        <p
+            class="text-black dark:text-white leading-relaxed opacity-90 text-sm pb-3 pt-2"
+        >
+            {description}
+        </p>
+        <span class="text-sm text-black opacity-60 dark:text-white"
+            >{date}
+        </span>
+    </div>
+    <div class="bg-black bg-opacity-5 h-36 w-40 rounded-md"></div>
+</div>
