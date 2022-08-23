@@ -9,11 +9,21 @@ export interface Props {
 		pubDate?: string;
 		updatedDate?: string;
 		heroImage?: string;
+		tags?: string[];
+		categories?: string[];
 	};
 }
 
 const {
-	content: { title, description, pubDate, updatedDate, heroImage },
+	content: {
+		title,
+		tags,
+		categories,
+		description,
+		pubDate,
+		updatedDate,
+		heroImage,
+	},
 } = Astro.props as Props;
 ---
 
@@ -23,22 +33,48 @@ const {
 	</head>
 	<body>
 		<main>
-			<article>
-				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{
-					updatedDate && (
-						<div>
-							Last updated on <time>{updatedDate}</time>
-						</div>
-					)
-				}
-				<div
-					class="prose dark:prose-invert prose-img:max-h-96 prose-img:mx-auto contianer mx-auto px-5 md:px-0"
-				>
-					<slot />
+			<article
+				class="border-b dark:border-white dark:border-opacity-20 mx-5 md:px-0 md:mx-5 mb-20 pt-10 md:pt-20"
+			>
+				<a href="/" class="block">
+					<svg
+						height="20"
+						class="fill-black dark:fill-white hover:opacity-50"
+						viewBox="0 0 20 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M7.70679 14.707C7.51926 14.8945 7.26495 14.9998 6.99979 14.9998C6.73462 14.9998 6.48031 14.8945 6.29279 14.707L2.29279 10.707C2.10532 10.5195 2 10.2652 2 10C2 9.73488 2.10532 9.48057 2.29279 9.29304L6.29279 5.29304C6.48139 5.11088 6.73399 5.01009 6.99619 5.01237C7.25838 5.01465 7.5092 5.11981 7.6946 5.30522C7.88001 5.49063 7.98518 5.74144 7.98746 6.00364C7.98974 6.26584 7.88894 6.51844 7.70679 6.70704L5.41379 9.00004H16.9998C17.265 9.00004 17.5194 9.1054 17.7069 9.29293C17.8944 9.48047 17.9998 9.73482 17.9998 10C17.9998 10.2653 17.8944 10.5196 17.7069 10.7071C17.5194 10.8947 17.265 11 16.9998 11H5.41379L7.70679 13.293C7.89426 13.4806 7.99957 13.7349 7.99957 14C7.99957 14.2652 7.89426 14.5195 7.70679 14.707Z"
+						></path>
+					</svg>
+				</a>
+				<div class="flex flex-row gap-x-3 py-4">
+					{
+						tags.map((tag) => (
+							<p class="dark:text-white opacity-60">{tag}</p>
+						))
+					}
 				</div>
+				<h1 class="dark:text-white pb-3 text-black font-medium text-xl">
+					{title}
+				</h1>
+
+				<p class="dark:text-white opacity-80 text-black">
+					{description}
+				</p>
+
+				<p class="dark:text-white text-black font-medium pt-7 pb-5">
+					Tony
+				</p>
 			</article>
+			<div
+				class="prose dark:prose-invert prose-img:max-h-96 prose-img:mx-auto contianer mx-auto px-5 md:px-0"
+			>
+				<slot />
+			</div>
 		</main>
 		<Footer />
 	</body>
