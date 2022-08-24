@@ -14,7 +14,7 @@ const posts = (await Astro.glob("../pages/blog/*.{md,mdx}")).sort(
             <Post
                 title={post.frontmatter.title}
                 description={post.frontmatter.description}
-                image={post.frontmatter.image}
+                image={post.frontmatter.heroImage}
                 link={post.url}
                 date={post.frontmatter.pubDate}
             />

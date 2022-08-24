@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/BlogPost.astro'
 description: 'Add a custom Library in SwiftUI, and create clean and neat projects. Create modiefrs for Images, List, NavigationView and more'
-heroImage: '/placeholder-hero.jpg'
+heroImage: '/cover/custom-library.svg'
 tags: ['swiftui', 'swiftui-library', 'xcode']
 categories: ['swiftui']
 title: 'Add a Custom Library SwiftUI'

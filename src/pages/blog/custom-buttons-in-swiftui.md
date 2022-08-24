@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/BlogPost.astro'
 description: 'Custom buttons in swiftUI, in this post coverts many reusable custom designs such as, outlined buttons, neumorphic, gradient,rounded corners.'
-heroImage: '/placeholder-hero.jpg'
+heroImage: '/cover/custom-button.svg'
 tags: ['ios', 'swift', 'swiftui', 'uncategorised']
 categories: ['swiftui']
 title: 'Custom Buttons in SwiftUI'

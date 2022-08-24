@@ -2,7 +2,7 @@
 layout: '../../layouts/BlogPost.astro'
 title: 'Detect OS in SwiftUI'
 pubDate: '2020-12-04'
-heroImage: '/placeholder-hero.jpg'
+heroImage: '/cover/detect-os.svg'
 description: 'in this post I am going to be explaining how you can detect OS in SwiftUI. SwiftUI 2.0 allows us to write on base code for every Apple OS.'
 tags: ['ios', 'swiftui', 'uncategorised', 'xcode']
 categories: ['swiftui']

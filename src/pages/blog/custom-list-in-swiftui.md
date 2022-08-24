@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 title: 'Custom List in SwiftUI'
 pubDate: '2021-01-19'
 description: 'In this post you will find Custom List in SwiftUI, how you can Create you own navigation bars and back-navigation buttons.'
-heroImage: '/placeholder-hero.jpg'
+heroImage: '/cover/custom-list.svg'
 tags: ['ios', 'swiftui']
 categories: ['swiftui']
 ---

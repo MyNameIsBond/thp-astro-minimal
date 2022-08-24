@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/BlogPost.astro'
 description: 'In this post is focusing on LazyHGrid in SwiftUI. It is explained how to use LazyHGrid creating a stunning designed cocktail app'
-heroImage: '/placeholder-hero.jpg'
+heroImage: '/cover/lazy-2.svg'
 tags: ['ios', 'design', 'swiftui', 'xcode']
 categories: ['swiftui']
 title: 'LazyVGrid and LazyHGrid in SwiftUI (Part 2/3)'

@@ -5,7 +5,7 @@ tags: ['ios', 'swiftui', 'uncategorised', 'xcode']
 categories: ['swiftui']
 title: 'Custom Color in SwiftUI.'
 pubDate: '2020-11-25'
-heroImage: '/placeholder-hero.jpg'
+heroImage: '/cover/custom-colour.svg'
 ---
 
 In this post I will cover how you can create your own custom color in SwiftUI. SwiftUI comes with default colors out of the box. We will create an example using the made custom colors to decorate the text and the System Image I am going to implement. I will also use LinearGradient() to make an appealing background starting from `.topLeading` and ending to `.bottomTrailing`.

@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/BlogPost.astro'
-heroImage: '/placeholder-hero.jpg'
+heroImage: '/cover/detect-theme.svg'
 description: 'This is a detailed post on how to detect the current theme in SwiftUI. It is being explained by giving a complete neumorphic UI as an example.'
 tags: ['ios', 'swiftui', 'xcode']
 categories: ['swiftui']
