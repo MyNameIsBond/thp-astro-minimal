@@ -1,0 +1,46 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="en-us" class="">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <div class="pt-20">
+            <h1 class="text-black dark:text-white font-medium text-xl">
+                Subscribe
+            </h1>
+            <p class="py-5 dark:text-white opacity-80 text-black">
+                Can curiosity may end shameless explained. True high on said mr
+                on come. An do mr design at little myself wholly entire
+                though.Can curiosity may end shameless
+            </p>
+            <input
+                type="text"
+                name="email"
+                class="py-2 px-4 rounded-md mr-2"
+                placeholder="Enter your email"
+            />
+            <button class="bg-white py-2 px-4 rounded-md font-medium"
+                >subscribe
+            </button>
+
+            <div class="pt-20">
+                <h1 class="text-black dark:text-white font-medium text-xl">
+                    Patreon
+                </h1>
+                <p class="py-5 dark:text-white opacity-80 text-black">
+                    Support the happy programmer on patreon it is very much
+                    appreciated if you do.
+                </p>
+                <button
+                    class="bg-orange-700 text-white py-2 px-4 rounded-md font-medium"
+                    >patreon
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

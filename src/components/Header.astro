@@ -8,14 +8,16 @@ const { title, description, socials } = Astro.props;
 ---
 
 <header>
-	<div class="pt-20 border-b dark:border-white dark:border-opacity-20">
+	<div
+		class="pt-20 border-b dark:border-white dark:border-opacity-10 px-10 md:px-0"
+	>
 		<h1 class="text-black dark:text-white font-medium text-xl">
 			{title}
 		</h1>
 		<p class="dark:text-white py-3 text-sm">
 			{description}
 		</p>
-		<div class="flex flex-row gap-x-2 pb-3">
+		<div class="flex flex-row gap-x-2 pb-8">
 			{
 				socials.map(([name, link]) => (
 					<a
