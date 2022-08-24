@@ -11,18 +11,18 @@ const { title, description, socials } = Astro.props;
 	<div
 		class="pt-20 border-b dark:border-white dark:border-opacity-10 px-10 md:px-0"
 	>
-		<h1 class="text-black dark:text-white font-medium text-xl">
+		<h1 class="text-neutral-900 dark:text-neutral-50 font-medium text-xl">
 			{title}
 		</h1>
-		<p class="dark:text-white py-3 text-sm">
+		<p class="dark:text-neutral-50 py-3 text-sm">
 			{description}
 		</p>
-		<div class="flex flex-row gap-x-2 pb-8">
+		<div class="flex flex-row gap-x-2 pt-3 pb-8">
 			{
 				socials.map(([name, link]) => (
 					<a
 						href={link}
-						class="dark:text-white text-black text-sm hover:opacity-100 opacity-60"
+						class="dark:text-neutral-50 text-neutral-900 text-sm hover:opacity-100 opacity-60"
 					>
 						{name}
 					</a>

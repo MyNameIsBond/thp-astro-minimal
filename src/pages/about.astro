@@ -1,0 +1,33 @@
+---
+import Arrow from "../components/Arrow.astro";
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body class="px-10 md:px-0 my-20">
+        <Arrow />
+        <img
+            src="/tony.webp"
+            class="rounded-full my-5 w-32 h-32 bg-neutral-300 p-1"
+            alt="Tony"
+            loading="lazy"
+        />
+        <h1
+            class="text-neutral-900 dark:text-neutral-50 font-medium text-xl pb-5"
+        >
+            About Me
+        </h1>
+        <p class="dark:text-neutral-50 text-neutral-900">
+            I'm a software engineer always striving to become a better
+            professional.
+        </p>
+        <p class="text-neutral-900 dark:text-neutral-50 font-medium py-5">
+            Tony
+        </p>
+    </body>
+</html>

@@ -15,15 +15,15 @@ const { title, description, date, image, link } = Astro.props;
     <div>
         <a
             href={link}
-            class="text-black hover:text-opacity-60 dark:text-white font-medium text-xl"
+            class="text-neutral-900 hover:text-opacity-60 dark:text-neutral-50 font-medium text-xl"
             >{title}
         </a>
         <p
-            class="text-black dark:text-white leading-relaxed opacity-90 text-sm pb-3 pt-2"
+            class="text-neutral-900 dark:text-neutral-50 leading-relaxed opacity-90 text-sm pb-3 pt-2"
         >
             {description}
         </p>
-        <span class="text-sm text-black opacity-60 dark:text-white"
+        <span class="text-sm text-neutral-900 opacity-60 dark:text-neutral-50"
             >{date}
         </span>
     </div>

@@ -8,4 +8,6 @@ export const socials: string[][] = [
   ['twitter', 'https://twitter.com/happy_prog'],
   ['github', 'https://github.com/MyNameIsBond'],
   ['patreon', 'https://www.patreon.com/thehappyprogrammer'],
+  ['subscribe', '/subscribe'],
+  ['about', '/about'],
 ];

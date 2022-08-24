@@ -1,4 +1,5 @@
 ---
+import Arrow from "../components/Arrow.astro";
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
@@ -10,10 +11,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
     </head>
     <body>
         <div class="pt-20">
-            <h1 class="text-black dark:text-white font-medium text-xl">
+            <Arrow />
+            <h1
+                class="text-neutral-900 dark:text-neutral-50 font-medium text-xl pt-5 pb-3"
+            >
                 Subscribe
             </h1>
-            <p class="py-5 dark:text-white opacity-80 text-black">
+            <p class="pb-8 dark:text-neutral-50 opacity-80 text-neutral-900">
                 Can curiosity may end shameless explained. True high on said mr
                 on come. An do mr design at little myself wholly entire
                 though.Can curiosity may end shameless
@@ -21,23 +25,29 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
             <input
                 type="text"
                 name="email"
-                class="py-2 px-4 rounded-md mr-2"
+                class="py-2 px-4 bg-black dark:bg-white bg-opacity-5 dark:bg-opacity-5 rounded-md mr-2 dark:text-neutral-50 text-neutral-900"
                 placeholder="Enter your email"
             />
-            <button class="bg-white py-2 px-4 rounded-md font-medium"
+            <button
+                class="dark:bg-white bg-black py-2 px-4 rounded-md font-medium dark:text-neutral-900 hover:opacity-50 text-neutral-50 shadow-md"
                 >subscribe
             </button>
 
             <div class="pt-20">
-                <h1 class="text-black dark:text-white font-medium text-xl">
+                <h1
+                    class="text-neutral-900 dark:text-neutral-50 font-medium text-xl"
+                >
                     Patreon
                 </h1>
-                <p class="py-5 dark:text-white opacity-80 text-black">
+                <p
+                    class="py-5 dark:text-neutral-50 opacity-80 text-neutral-900"
+                >
                     Support the happy programmer on patreon it is very much
-                    appreciated if you do.
+                    appreciated if you do. Remember time is money. So if you pay
+                    me I will save you a lot of time.
                 </p>
                 <button
-                    class="bg-orange-700 text-white py-2 px-4 rounded-md font-medium"
+                    class="bg-orange-700 hover:opacity-50 text-neutral-50 py-2 px-4 rounded-md font-medium shadow-md"
                     >patreon
                 </button>
             </div>
