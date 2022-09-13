@@ -13,4 +13,4 @@ $npm run build && npm run preview
 ```
 
 
-THP = The Happy programmer
+THP = The Happy programmer.
