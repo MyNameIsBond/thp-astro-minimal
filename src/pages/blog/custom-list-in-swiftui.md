@@ -170,7 +170,10 @@ struct tags: View {
 }
 ```
 
-https://videopress.com/v/uHoKzYlB?resizeToParent=true&cover=true&autoPlay=true&loop=true&preloadContent=metadata
+<video width="320" height="240" autoplay>
+  <source src="https://videopress.com/v/uHoKzYlB" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 `GroupedListStyle()` in SwiftUI
 
