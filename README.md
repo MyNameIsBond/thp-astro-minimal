@@ -2,7 +2,7 @@
 
 This is a very minimal Blog. with 0,2 seconds load page.
 
-for development
+[Demo](https://thp-astro-minimal.vercel.app)
 
 ```bash
 npm run dev
@@ -13,4 +13,4 @@ $npm run build && npm run preview
 ```
 
 
-THP = The Happy programmer
+
